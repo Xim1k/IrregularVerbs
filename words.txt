@@ -1,121 +1,121 @@
-1 arise+500 arose+500 arisen+500
-2 awake+500-awoke+500-awoken+500
-3 be+500-was/were+500-been+500
-4 bear+500-bore+500-born+500
-5 beat+500-beat+500-beaten+500
-6 become+500-became+500-become+500
-7 begin+500-began+500-begun+500
-8 bend+500-bent+500-bent+500
-9 bet+500-bet+500-bet+500
-10 bind+500-bound+500-bound+500
-11 bite+500-bit+500-bitten+500
-12 bleed+500-bled+500-bled+500
-13 blow+500-blew+500-blown+500
-14 break+500-broke+500-broken+500
-15 breed+500-bred+500-bred+500
-16 bring+500-brought+500-brought+500
-17 build+500-built+500-built+500
-18 buy+500-bought+500-bought+500
-19 catch+500-caught+500-caught+500
-20 choose+500-chose+500-chosen+500
-21 cling+500-clung+500-clung+500
-22 come+500-came+500-come+500
-23 cost+500-cost+500-cost+500
-24 cut+500-cut+500-cut+500
-25 deal+500-dealt+500-dealt+500
-26 dig+500-dug+500-dug+500
-27 do+500-did+500-done+500
-28 draw+500-drew+500-drawn+500
-29 drink+500-drank+500-drunk+500
-30 drive+500-drove+500-driven+500
-31 eat+500-ate+500-eaten+500
-32 fall+500-fell+500-fallen+500
-33 feed+500-fed+500-fed+500
-34 feel+500-felt+500-felt+500
-35 fight+500-fought+500-fought+500
-36 find+500-found+500-found+500
-37 flee+500-fled+500-fled+500
-38 fly+500-flew+500-flown+500
-39 forbid+500-forbade+500-forbidden+500
-40 forget+500-forgot+500-forgotten+500
-41 forgive+500-forgave+500-forgiven+500
-42 freeze+500-froze+500-frozen+500
-43 get+500-got+500-got+500
-44 give+500-gave+500-given+500
-45 go+500-went+500-gone+500
-46 grow+500-grew+500-grown+500
-47 hang+500-hung+500-hung+500
-48 have/has+500-had+500-had+500
-49 hear+500-heard+500-heard+500
-50 hide+500-hid+500-hidden+500
-51 hit+500-hit+500-hit+500
-52 hold+500-held+500-held+500
-53 hurt+500-hurt+500-hurt+500
-54 keep+500-kept+500-kept+500
-55 know+500-knew+500-known+500
-56 lay+500-laid+500-laid+500
-57 lead+500-led+500-led+500
-58 learn+500-learnt+500-learnt+500
-59 leave+500-left+500-left+500
-60 lend+500-lent+500-lent+500
-61 let+500-let+500-let+500
-62 lie+500-lay+500-lain+500
-63 light+500-lit+500-lit+500
-64 lose+500-lost+500-lost+500
-65 make+500-made+500-made+500
-66 mean+500-meant+500-meant+500
-67 meet+500-met+500-met+500
-68 pay+500-paid+500-paid+500
-69 put+500-put+500-put+500
-70 read+500-read+500-read+500
-71 ride+500-rode+500-ridden+500
-72 ring+500-rang+500-rung+500
-73 rise+500-rose+500-risen+500
-74 run+500-ran+500-run+500
-75 say+500-said+500-said+500
-76 see+500-saw+500-seen+500
-77 seek+500-sought+500-sought+500
-78 sell+500-sold+500-sold+500
-79 send+500-sent+500-sent+500
-80 set+500-set+500-set+500
-81 shake+500-shook+500-shaken+500
-82 shine+500-shone+500-shone+500
-83 shoot+500-shot+500-shot+500
-84 show+500-showed+500-shown+500
-85 shrink+500-shrank+500-shrunk+500
-86 shut+500-shut+500-shut+500
-87 sing+500-sang+500-sung+500
-88 sit+500-sat+500-sat+500
-89 sleep+500-slept+500-slept+500
-90 slide+500-slid+500-slid+500
-91 smell+500-smelt+500-smelt+500
-92 speak+500-spoke+500-spoken+500
-93 speed+500-sped+500-	sped+500
-94 spell+500-spelt+500-spelt+500
-95 spend+500-spent+500-spent+500
-96 spill+500-spilt+500-spilt+500
-97 spin+500-spun+500-spun+500
-98 split+500-split+500-split+500
-99 spoil+500-spoilt+500-spoilt+500
-100 spread+500-spread+500-spread+500
-101 stand+500-stood+500-stood+500
-102 steal+500-stole+500-stolen+500
-103 sting+500-stung+500-stung+500
-104 stink+500-stank+500-stunk+500
-105 strike+500-struck+500-struck+500
-106 swear+500-swore+500-sworn+500
-107 sweep+500-swept+500-swept+500
-108 swell+500-swelled+500-swollen+500
-109 swim+500-swam+500-swum+500
-110 take+500-took+500-taken+500
-111 teach+500-taught+500-taught+500
-112 tear+500-tore+500-torn+500
-113 tell+500-told+500-told+500
-114 think+500-thought+500-thought+500
-115 throw+500-threw+500-thrown+500
-116 Understand+500-Understood+500-Understood+500
-117 wake+500-woke+500-woken+500
-118 wear+500-wore+500-worn+500
-119 win+500-won+500-won+500
-120 wind+500-wound+500-wound+500
-121 write+500-wrote+500-written+500
+arise arose arisen
+awake-awoke-awoken
+be-was-been
+bear-bore-born
+beat-beat-beaten
+become-became-become
+begin-began-begun
+bend-bent-bent
+bet-bet-bet
+bind-bound-bound
+bite-bit-bitten
+bleed-bled-bled
+blow-blew-blown
+break-broke-broken
+breed-bred-bred
+bring-brought-brought
+build-built-built
+buy-bought-bought
+catch-caught-caught
+choose-chose-chosen
+cling-clung-clung
+come-came-come
+cost-cost-cost
+cut-cut-cut
+deal-dealt-dealt
+dig-dug-dug
+do-did-done
+draw-drew-drawn
+drink-drank-drunk
+drive-drove-driven
+eat-ate-eaten
+fall-fell-fallen
+feed-fed-fed
+feel-felt-felt
+fight-fought-fought
+find-found-found
+flee-fled-fled
+fly-flew-flown
+forbid-forbade-forbidden
+forget-forgot-forgotten
+forgive-forgave-forgiven
+freeze-froze-frozen
+get-got-got
+give-gave-given
+go-went-gone
+grow-grew-grown
+hang-hung-hung
+have-had-had
+hear-heard-heard
+hide-hid-hidden
+hit-hit-hit
+hold-held-held
+hurt-hurt-hurt
+keep-kept-kept
+know-knew-known
+lay-laid-laid
+lead-led-led
+learn-learnt-learnt
+leave-left-left
+lend-lent-lent
+let-let-let
+lie-lay-lain
+light-lit-lit
+lose-lost-lost
+make-made-made
+mean-meant-meant
+meet-met-met
+pay-paid-paid
+put-put-put
+read-read-read
+ride-rode-ridden
+ring-rang-rung
+rise-rose-risen
+run-ran-run
+say-said-said
+see-saw-seen
+seek-sought-sought
+sell-sold-sold
+send-sent-sent
+set-set-set
+shake-shook-shaken
+shine-shone-shone
+shoot-shot-shot
+show-showed-shown
+shrink-shrank-shrunk
+shut-shut-shut
+sing-sang-sung
+sit-sat-sat
+sleep-slept-slept
+slide-slid-slid
+smell-smelt-smelt
+speak-spoke-spoken
+speed-sped-	sped
+spell-spelt-spelt
+spend-spent-spent
+spill-spilt-spilt
+spin-spun-spun
+split-split-split
+spoil-spoilt-spoilt
+spread-spread-spread
+stand-stood-stood
+steal-stole-stolen
+sting-stung-stung
+stink-stank-stunk
+strike-struck-struck
+swear-swore-sworn
+sweep-swept-swept
+swell-swelled-swollen
+swim-swam-swum
+take-took-taken
+teach-taught-taught
+tear-tore-torn
+tell-told-told
+think-thought-thought
+throw-threw-thrown
+understand-understood-understood
+wake-woke-woken
+wear-wore-worn
+win-won-won
+wind-wound-wound
+write-wrote-written
