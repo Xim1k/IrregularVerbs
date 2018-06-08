@@ -21,4 +21,6 @@ int checkword(struct form word);
 void lowperc( struct dict dictonary[]);
 void printperc(struct dict dictonary[], FILE* percent);
 void score_tab( char name[], int score);
+void printres(int l);
+
 #endif

@@ -15,7 +15,8 @@ int main(){
   FILE* percent = fopen("src/percent.txt","r");
 
 
-  printf("\t\tWELCOME\n MENU:\n START\n EXIT\n ");
+  printf("\t\tWELCOME\n MENU:\n START\n RESULTS\n EXIT\n ");
+  printf("Choose the category: ");
   scanf("%s", start);
   if ((strcmp(start, "Start") == 0) || (strcmp(start, "start") == 0) || (strcmp(start, "START") == 0)){
     printf("Input your name (Max size - 3):");
@@ -36,7 +37,13 @@ int main(){
     if ((strcmp(start, "Exit") == 0) || (strcmp(start, "exit") == 0) || (strcmp(start,"EXIT") == 0)){
       exit(1);
     } else {
-      printf("Input right word\n");
+      if ((strcmp(start, "RESULTS") == 0) || (strcmp(start, "results") == 0) || (strcmp(start,"Results") == 0)){
+         printres(1);
+         exit(1);
+      } else {
+         printf("Input right word\n");
+         exit(1);
+      }
     }
   }
   score_tab(name, score);

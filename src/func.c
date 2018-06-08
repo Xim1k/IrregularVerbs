@@ -4,6 +4,28 @@
 #include <stdlib.h>
 #include <time.h>
 
+void printres(int l){
+  FILE* fout = fopen("src/results.txt", "r");
+  char players[60];
+  int scores[20];
+  int i, j, k;
+  fgets(players , 61 , fout );
+  for( i = 0 ; i < 19 ; i++ ){
+    fscanf(fout , "%d" , &scores[i] );
+  }
+  i = 0;
+  k = 0;
+  while(scores[i] != 0){
+    for(j = 0; j <= 2; j++){
+      printf("%c", players[k]);
+      k++;
+    }
+    printf("    %d\n", scores[i]);
+    i++;
+  }
+  fclose(fout);
+}
+
 void score_tab( char name[], int score ){
   int i = 0, j = 0, t = 0;
   char s, players[60];
@@ -14,7 +36,7 @@ void score_tab( char name[], int score ){
   FILE *fi;
   fi = fopen("src/results.txt","r" );
   fgets( players , 61 , fi );
-  for( i = 0 ; i < 20 ; i++ ){
+  for( i = 0 ; i < 19 ; i++ ){
     fscanf( fi , "%d" , &scores[i] );
   }
   if( feof(fi) ){
