@@ -14,7 +14,7 @@ void score_tab( char name[], int score ){
   FILE *fi;
   fi = fopen("src/results.txt","r" );
   fgets( players , 61 , fi );
-  for( i = 0 ; i < 20 ; i++ ){
+  for( i = 0 ; i < 19 ; i++ ){
     fscanf( fi , "%d" , &scores[i] );
   }
   if( feof(fi) ){
@@ -50,7 +50,6 @@ void score_tab( char name[], int score ){
   s = players[57];
   players[57] = players[57-j];
   players[57-j] = s;
-  puts(players);
   FILE *fo;
   fo = fopen( "src/results.txt","w" );
   fprintf( fo , "%s" , players );
