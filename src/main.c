@@ -1,24 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 #include "func.h"
+#include <stdlib.h>
 
 int main(){
   char start[6];
-  char name[10];
+  char name[3];
   int score = 0;
   struct dict dictonary[121];
   int wrong;
   int result;
 
-  FILE* fin = fopen("words.txt", "r");
-  FILE* fout = fopen("results.txt", "a");
-  FILE* percent = fopen("percent.txt","r");
+  FILE* fin = fopen("src/words.txt", "r");
+  FILE* percent = fopen("src/percent.txt","r");
 
 
   printf("\t\tWELCOME\n MENU:\n START\n EXIT\n ");
   scanf("%s", start);
   if ((strcmp(start, "Start") == 0) || (strcmp(start, "start") == 0) || (strcmp(start, "START") == 0)){
-    printf("Input your name (Max size - 10):");
+    printf("Input your name (Max size - 3):");
     scanf("%s", name);
     create_dict(dictonary, fin, percent);
     while(wrong != 3){
@@ -39,12 +39,12 @@ int main(){
       printf("Input right word\n");
     }
   }
+  score_tab(name, score);
   fclose(percent);
   lowperc(dictonary);
-  FILE* perc = fopen("percent.txt", "w");
+  FILE* perc = fopen("src/percent.txt", "w");
   printperc(dictonary, perc);
   fclose(perc);
-  fclose(fout);
   fclose(fin);
   exit(1);
 }
