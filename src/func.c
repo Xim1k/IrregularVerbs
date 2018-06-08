@@ -28,6 +28,7 @@ void printres(int l){
 
 void score_tab( char name[], int score ){
   int i = 0, j = 0, t = 0;
+  int min;
   char s, players[60];
   int scores[19];
   for( i = 0 ; i < 19 ; i++ ){
@@ -36,13 +37,18 @@ void score_tab( char name[], int score ){
   FILE *fi;
   fi = fopen("src/results.txt","r" );
   fgets( players , 61 , fi );
-  for( i = 0 ; i < 19 ; i++ ){
-    fscanf( fi , "%d" , &scores[i] );
+  while(!feof(fi) && scores[i] != 0){
+    fscanf(fi, "%d", &scores[i]);
+    i++;
+  }
+  min = i;
+  if(min < 19){
+    min++;
   }
   if( feof(fi) ){
     fclose(fi);
   }
-  if( score <= scores[19] ){
+  if( score <= scores[min] ){
     printf("Sorry, but your result is too low to be there :(\n");
     return;
   }else{
