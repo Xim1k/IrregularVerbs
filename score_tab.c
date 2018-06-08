@@ -1,46 +1,53 @@
-#define N = 20;
-void score_tab( int score );
+#include<stdio.h>
 
 void score_tab( int score ){
   int i = 0;
-  int res[N]
-  FILE *f = fopen("result.txt","r" );
-  while ( !feof(f) ){
-    for( i = 0 ; i < N ; i++ ){
-    fscanf( f , "%d" , res[i] );
-    }
+  int n = 20;
+  int res[20] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+  FILE *fi;
+  fi = fopen("result.txt","r" );
+  for( i = 0 ; i < 20 ; i++ ){
+    fscanf( fi , "%d" , &res[i] );
   }
-  fclose(f);
-
-  if( score < res[N] ){
-    printf("Sorry, but your result is too low to be there :(");
+  if( feof(fi) ){
+    fclose(fi);
+  }
+  if( score <= res[19] ){
+    printf("Sorry, but your result is too low to be there :(\n");
     return;
   }else{
-    res[N] = score;
+    res[19] = score;
   }
 
-  int j, n = 0;
+  int j;
   int max;
   max = res[0];
-  for (i = 1; i < n; i++) {
+  for (i = 1 ; i < 20 ; i++) {
     if (max < res[i]) {
       max = res[i];
     }
   }
   max++;
   int b[max];
-  for (i = 0; i < max; i++){
-    b[i]=0;
+  for (i = 0 ; i < max ; i++){
+    b[i] = 0;
   }
-  for (i = 0; i < n; i++){
-    b[a[i]]++;
+  for (i = 0 ; i < n ; i++){
+    b[res[i]]++;
   }
   i = 0;
-  for (j = 0; j < max; j++){
+  for (j = max - 1 ; j > 0 ; j--){
     while (b[j] > 0){
-      a[i] = j;
+      res[i] = j;
       i++;
       b[j]= b[j] - 1;
     }
   }
+  FILE *fo;
+  fo = fopen( "result.txt","w" );
+  for( i = 0 ; i < n ; i++ ){
+    fprintf( fo , "%d" , res[i] );
+    fprintf( fo , "\n" );
+  }
+  fclose(fo);
 }
