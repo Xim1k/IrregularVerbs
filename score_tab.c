@@ -1,8 +1,7 @@
 #include<stdio.h>
 
 void score_tab( int score ){
-  int i = 0;
-  int n = 20;
+  int i = 0, t = 0;
   int res[20] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
   FILE *fi;
   fi = fopen("result.txt","r" );
@@ -19,33 +18,17 @@ void score_tab( int score ){
     res[19] = score;
   }
 
-  int j;
-  int max;
-  max = res[0];
-  for (i = 1 ; i < 20 ; i++) {
-    if (max < res[i]) {
-      max = res[i];
+  for( i = 19 ; i > 0 ; i-- ){
+    if( res[i] > res[i-1]){
+      t = res[i-1];
+      res[i-1] = res[i];
+      res[i] = t;
     }
   }
-  max++;
-  int b[max];
-  for (i = 0 ; i < max ; i++){
-    b[i] = 0;
-  }
-  for (i = 0 ; i < n ; i++){
-    b[res[i]]++;
-  }
-  i = 0;
-  for (j = max - 1 ; j > 0 ; j--){
-    while (b[j] > 0){
-      res[i] = j;
-      i++;
-      b[j]= b[j] - 1;
-    }
-  }
+
   FILE *fo;
   fo = fopen( "result.txt","w" );
-  for( i = 0 ; i < n ; i++ ){
+  for( i = 0 ; i < 20 ; i++ ){
     fprintf( fo , "%d" , res[i] );
     fprintf( fo , "\n" );
   }
