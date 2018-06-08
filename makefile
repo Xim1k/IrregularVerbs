@@ -22,7 +22,7 @@ build:
 
 
 clean:
-	rm -rf build/main/*.o build/test/*.o main testing
+	rm -rf build main testing
 
 gdb:
 	gcc -Wall -O3 -g -o main src/main.c src/func.c
