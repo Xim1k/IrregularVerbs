@@ -6,9 +6,9 @@ int main(){
   char start[6];
   char name[10];
   int score = 0;
-  int i = 0;
-  int j = 0;
   struct dict dictonary[121];
+  int wrong;
+  int result;
 
   FILE* fin = fopen("words.txt", "r");
   FILE* fout = fopen("results.txt", "a");
@@ -21,7 +21,15 @@ int main(){
     printf("Input your name (Max size - 10):");
     scanf("%s", name);
     create_dict(dictonary, fin, percent);
-
+    while(wrong != 3){
+      result = game(dictonary);
+      if(result == 1){
+        score++;
+      } else {
+        wrong++;
+      }
+      printf("\nYour score: %d\n", score);
+    }
   } else {
     if ((strcmp(start, "Exit") == 0) || (strcmp(start, "exit") == 0) || (strcmp(start,"EXIT") == 0)){
       exit(1);

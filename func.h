@@ -14,9 +14,9 @@ struct dict{
 
 
 void create_dict(struct dict dictonary[121], FILE* words, FILE* percent);
-int game(struct dict dictonary[121], int score);
-void print_q(dict dictonary, int from);
-int check_ans( dict dictonary, int to, char ans[]);
-int checkword(form word);
+int game(struct dict dictonary[121]);
+void print_q(struct dict dictonary, int from, int to);
+int check_ans(struct dict dictonary, int to, char ans[]);
+int checkword(struct form word);
 
 #endif

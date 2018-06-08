@@ -74,7 +74,8 @@ deal
 dealt
 dealt
 dig
-dugdug
+dug
+dug
 do
 did
 done
