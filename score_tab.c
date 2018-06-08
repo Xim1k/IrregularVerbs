@@ -2,7 +2,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-void score_tab( int score ){
+void score_tab( char name[], int score ){
   int i = 0, j = 0, t = 0;
   char s, players[60];
   int scores[19];
@@ -22,6 +22,9 @@ void score_tab( int score ){
     printf("Sorry, but your result is too low to be there :(\n");
     return;
   }else{
+    players[57] = name[0];
+    players[58] = name[1];
+    players[59] = name[2];
     scores[19] = score;
   }
 
