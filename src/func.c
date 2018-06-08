@@ -48,6 +48,15 @@ int game(struct dict dictonary[121]){
   print_q(dictonary[num], from, to);
   scanf("%s", ans);
   if(check_ans(dictonary[num], to,ans)){
+    if (to == 1){
+      dictonary[num].first.perc = dictonary[num].first.perc + 5;
+    }
+    if (to == 2){
+      dictonary[num].second.perc = dictonary[num].second.perc + 5;
+    }
+    if (to == 3){
+      dictonary[num].third.perc = dictonary[num].third.perc + 5;
+    }
     return 1;
   } else {
     printf("Wrong answer!");
@@ -137,4 +146,28 @@ int checkword(struct form word) {
     return 0;
   }
   return 2;
+}
+
+void lowperc( struct dict dictonary[]){
+  int i;
+  for(i = 0; i <= 120; i++){
+    if (dictonary[i].first.perc - 2 >= 0){
+      dictonary[i].first.perc = dictonary[i].first.perc - 2;
+    }
+    if (dictonary[i].second.perc - 2 >= 0){
+      dictonary[i].second.perc = dictonary[i].second.perc - 2;
+    }
+    if (dictonary[i].third.perc - 2 >= 0){
+      dictonary[i].third.perc = dictonary[i].third.perc - 2;
+    }
+  }
+}
+
+void printperc(struct dict dictonary[], FILE* percent){
+  int i = 0;
+  for(i = 0; i <= 120; i++){
+    fprintf(percent,"%d\n", dictonary[i].first.perc);
+    fprintf(percent,"%d\n", dictonary[i].second.perc);
+    fprintf(percent,"%d\n", dictonary[i].third.perc);
+  }
 }

@@ -18,5 +18,6 @@ int game(struct dict dictonary[121]);
 void print_q(struct dict dictonary, int from, int to);
 int check_ans(struct dict dictonary, int to, char ans[]);
 int checkword(struct form word);
-
+void lowperc( struct dict dictonary[]);
+void printperc(struct dict dictonary[], FILE* percent);
 #endif

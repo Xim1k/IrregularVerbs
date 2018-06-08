@@ -15,17 +15,19 @@ int main(){
   FILE* percent = fopen("percent.txt","r");
 
 
-  printf("\t\tWelcome\n Menu:\n Start\n Exit\n ");
+  printf("\t\tWELCOME\n MENU:\n START\n EXIT\n ");
   scanf("%s", start);
-  if ((strcmp(start, "Start") == 0) || (strcmp(start, "start") == 0)){
+  if ((strcmp(start, "Start") == 0) || (strcmp(start, "start") == 0) || (strcmp(start, "START") == 0)){
     printf("Input your name (Max size - 10):");
     scanf("%s", name);
     create_dict(dictonary, fin, percent);
     while(wrong != 3){
       result = game(dictonary);
       if(result == 1){
+        printf("Attempts: %d", 3-wrong);
         score++;
       } else {
+        printf("\nAttempts: %d", 3-wrong);
         wrong++;
       }
       printf("\nYour score: %d\n", score);
@@ -37,8 +39,12 @@ int main(){
       printf("Input right word\n");
     }
   }
+  fclose(percent);
+  lowperc(dictonary);
+  FILE* perc = fopen("percent.txt", "w");
+  printperc(dictonary, perc);
+  fclose(perc);
   fclose(fout);
   fclose(fin);
-  fclose(percent);
   exit(1);
 }
